@@ -1,0 +1,35 @@
+{
+	"index.html": {
+		"resources": [
+			"css/picker.css",
+			"lib/prefix.js",
+			"lib/react-dom.min.js",
+			"lib/react.min.js",
+			"build/preload.js"
+		],
+		"refer": [
+			"pages/pullToRefresh.html",
+			"pages/picker.html"
+		]
+	},
+	"pages/pullToRefresh.html": {
+		"resources": [
+			"build/main.js",
+			"build/pullToRefresh.js",
+			"css/pull.css",
+			"fonts/mui.ttf",
+			"css/mui.min.css",
+			"lib/object-assign.js"
+		]
+	},
+	"pages/picker.html": {
+		"resources": [
+			"build/datePicker.js",
+			"build/picker.js",
+			"css/picker.css",
+			"lib/prefix.js",
+			"lib/react-dom.min.js",
+			"lib/react.min.js"
+		]
+	}
+}

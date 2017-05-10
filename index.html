@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/picker.css"/>
+    <style>
+    	ul{
+    		margin: 50px;
+    	}
+    	li{
+    		line-height: 30px;
+    	}
+    </style>
+    <script src="lib/react.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="lib/react-dom.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="lib/prefix.js" type="text/javascript" charset="utf-8"></script>
+   
+</head>
+<body>
+	<body style="overflow: hidden;">
+	 	<ul id="ul">
+	 		<li onclick="refresh()">下拉刷新</li>
+	 		<li onclick="picker()">日期选择</li>
+	 	</ul>
+    </body>
+</body>
+<script src="build/preload.js"></script>
+<script>
+	mui.plusReady(function(){
+		Preload.preloadPage([
+		{url:'_www/pages/picker.html',id:'picker'},
+		{url:'_www/pages/pullToRefresh.html',id:'refresh'}
+		],'index')
+	})
+	function refresh(){
+		
+		Preload.showPage('refresh')
+	}
+	function picker(){
+		Preload.showPage('picker')
+	}
+</script>
+</html>
